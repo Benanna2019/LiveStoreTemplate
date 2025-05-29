@@ -1,0 +1,44 @@
+{
+  "name": "livestore-ai",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "VITE_LIVESTORE_SYNC_URL=http://localhost:8787 vite --force",
+    "preview": "vite preview",
+    "wrangler:deploy": "wrangler deploy"
+  },
+  "dependencies": {
+    "@livestore/adapter-web": "^0.3.0",
+    "@livestore/devtools-vite": "^0.3.0",
+    "@livestore/livestore": "^0.3.0",
+    "@livestore/peer-deps": "^0.3.0",
+    "@livestore/react": "^0.3.0",
+    "@livestore/sync-cf": "^0.3.0",
+    "@livestore/utils": "^0.3.0",
+    "@livestore/wa-sqlite": "1.0.5-dev.2",
+    "@overengineering/fps-meter": "^0.1.2",
+    "@types/node": "^22.15.24",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "todomvc-app-css": "2.4.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.0",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@vitejs/plugin-react": "^4.4.1",
+    "eslint": "^9.25.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.30.1",
+    "vite": "^6.3.5",
+    "wrangler": "^4.14.4"
+  },
+  "engines": {
+    "node": ">=23.0.0"
+  }
+}
